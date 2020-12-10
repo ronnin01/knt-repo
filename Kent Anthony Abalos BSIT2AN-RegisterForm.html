@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>
+Register Form
+</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://www.icarsh.org/wp-content/uploads/2018/10/Reg-online.png" />
+<style>
+
+
+body {
+  font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+  background-image: url('https://www.wallpapertip.com/wmimgs/68-686766_pastel-background-goo-pastel-background-textures-and-aesthetic.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.signup__container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__thumbnail {
+  padding: 6rem;
+  background: url(https://i.pinimg.com/originals/5f/4a/3f/5f4a3fb927aa60b9b4c908d65f374b45.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.thumbnail__content h1,h4 {
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+}
+.signup__form {
+  padding: 8rem;
+  background: #fafafa;
+} 
+label {
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+.form-control {
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+.btn-form
+{
+padding: .5rem 1rem;
+font-size:.95rem;
+font-weight:600:
+color:#111;
+background:grey;
+border-radius:35rem;
+}
+[type="text"]{color: black}
+[type="password"]{color: black}
+</style>
+</head>
+
+<body>
+<div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    
+    <div class="thumbnail__content">
+      <h1 class="heading--primary">Welcome to KnT.</h1>
+      <h4 class="heading--secondary">Are you ready to join the elite?</h4>
+    </div>
+
+    <div class="signup__overlay"></div>
+</div>
+ 
+  <div class="container__child signup__form">
+    <form action="#">
+	<h1 style="color:Black;">R&nbsp;e&nbsp;g&nbsp;i&nbsp;s&nbsp;t&nbsp;e&nbsp;r&nbsp;&nbsp;H&nbsp;e&nbsp;r&nbsp;e!</h1>
+      <div class="form-group">
+        <label for="firstname">First Name :</label>
+        <input class="form-control" type="text" name="firstname"   required />
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input class="form-control" type="text" name="lastname"  required />
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input class="form-control" type="text" name="username"  required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="text" name="email"  required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password"  required />
+      </div>
+	<div class"form-group">
+	<label for="gender">Gender</label>
+	<input type="radio" name="gender">Male
+	<input type="radio" name="gender">Female
+	<input type="radio" name="gender">Others
+	</div>
+	<div class="form-group">
+	<label for="phone">Phone</label>
+	<select class="form-control">
+	<option>+61</option>
+	<option>+62</option>
+	<option selected>+63</option>
+	<option>+65</option>
+	<option>+66</option>
+	<input class="form-control" type="phone" name="mobile_digits"placeholder="9*********" maxlength="10">
+	</select>
+	</div>
+	<br />
+	<div class="form-group">
+	<input class="btn btn-form" type="submit" name="submit" value="SUBMIT">
+	</div>
+    </form>  
+  </div>
+</div>
+</body>
+</html>
